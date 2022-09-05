@@ -7,48 +7,45 @@ function formValidation() {
     let email_address = document.getElementById("email-address").value;
     let password = document.getElementById("password").value;
 
-    if (!first_name || !last_name || !email_address || !password) {
 
-        if (!first_name) {
-            document.getElementById("fn-t").style.display = "block";
-            document.getElementById("fn-i").style.display = "block";
+    if (!first_name) {
+        document.getElementById("fn-t").style.display = "block";
+        document.getElementById("fn-i").style.display = "block";
+    } else {
+        document.getElementById("fn-t").style.display = "none";
+        document.getElementById("fn-i").style.display = "none";
+    }
+
+    if (!last_name) {
+        document.getElementById("ln-t").style.display = "block";
+        document.getElementById("ln-i").style.display = "block";
+    } else {
+        document.getElementById("ln-t").style.display = "none";
+        document.getElementById("ln-i").style.display = "none";
+    }
+
+    if (!email_address) {
+        document.getElementById("e-t").style.display = "block";
+        document.getElementById("e-i").style.display = "block";
+    } else {
+        let regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        email_validation_result = regex.test(email_address);
+
+        if (email_validation_result) {
+            document.getElementById("e-t").style.display = "none";
+            document.getElementById("e-i").style.display = "none";
         } else {
-            document.getElementById("fn-t").style.display = "none";
-            document.getElementById("fn-i").style.display = "none";
-        }
-
-        if (!last_name) {
-            document.getElementById("ln-t").style.display = "block";
-            document.getElementById("ln-i").style.display = "block";
-        } else {
-            document.getElementById("ln-t").style.display = "none";
-            document.getElementById("ln-i").style.display = "none";
-        }
-
-        if (!email_address) {
             document.getElementById("e-t").style.display = "block";
             document.getElementById("e-i").style.display = "block";
-        } else {
-            let regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            email_validation_result = regex.test(email_address);
-
-            if (email_validation_result) {
-                document.getElementById("e-t").style.display = "none";
-                document.getElementById("e-i").style.display = "none";
-            } else {
-                document.getElementById("e-t").style.display = "block";
-                document.getElementById("e-i").style.display = "block";
-            }
         }
+    }
 
-        if (!password) {
-            document.getElementById("p-t").style.display = "block";
-            document.getElementById("p-i").style.display = "block";
-        } else {
-            document.getElementById("p-t").style.display = "none";
-            document.getElementById("p-i").style.display = "none";
-        }
-
+    if (!password) {
+        document.getElementById("p-t").style.display = "block";
+        document.getElementById("p-i").style.display = "block";
+    } else {
+        document.getElementById("p-t").style.display = "none";
+        document.getElementById("p-i").style.display = "none";
     }
 
     if (mobileQuery.matches) {
