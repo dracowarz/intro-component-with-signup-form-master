@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --poppins-font-400-500-600-700: "Poppins", sans-serif;
+  --white-clr: rgba(255, 255, 255);
+  --black-clr: rgba(0, 0, 0);
+  --background-and-terms: hsl(0, 100%, 74%);
+  --claim-your-free-trial: hsl(154, 59%, 51%);
+  --try-it-free-7-days: hsl(248, 32%, 49%);
+  --dark-blue-clr: hsl(249, 10%, 26%);
+  --grayish-blue-clr: hsl(246, 25%, 77%);
+}
+
+.attribution {
+  text-align: center;
+  color: var(--white-clr);
+  font-family: var(--poppins-font-400-500-600-700);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+}
+body .container {
+  display: flex;
+}
+body .container div:nth-child(1) {
+  font-family: var(--poppins-font-400-500-600-700);
+  color: var(--white-clr);
+}
+body .container div:nth-child(1) h1 {
+  line-height: 1.2;
+}
+body .container div:nth-child(1) p {
+  line-height: 1.8;
+}
+body .container div:nth-child(2) .try-it-free-7-days {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--try-it-free-7-days);
+  color: var(--white-clr);
+}
+body .container div:nth-child(2) .try-it-free-7-days span {
+  font-weight: 700;
+}
+body .container div:nth-child(2) form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-clr);
+}
+body .container div:nth-child(2) form label input {
+  width: 100%;
+  font-family: var(--poppins-font-400-500-600-700);
+  font-weight: 700;
+}
+body .container div:nth-child(2) form label .error-icon {
+  display: none;
+  position: absolute;
+  max-width: 10%;
+  color: var(--background-and-terms);
+}
+body .container div:nth-child(2) form label .error-text {
+  display: none;
+  font-family: var(--poppins-font-400-500-600-700);
+  font-weight: 500;
+  color: var(--background-and-terms);
+  text-align: end;
+}
+body .container div:nth-child(2) form .adjustment .claim-your-free-trial {
+  border: none;
+  cursor: pointer;
+  background-color: var(--claim-your-free-trial);
+  color: var(--white-clr);
+  font-family: var(--poppins-font-400-500-600-700);
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+}
+body .container div:nth-child(2) form .adjustment .terms-and-services {
+  font-family: var(--poppins-font-400-500-600-700);
+  color: var(--grayish-blue-clr);
+  text-align: center;
+}
+body .container div:nth-child(2) form .adjustment .terms-and-services span {
+  color: var(--background-and-terms);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .attribution {
+    margin: 2vw;
+    font-size: 1.432vw;
+  }
+  body {
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: var(--background-and-terms);
+    padding: 15vw 20vw;
+  }
+  body .container {
+    flex-direction: column;
+  }
+  body .container div:nth-child(1) {
+    text-align: center;
+    padding: 0 8.8vw;
+  }
+  body .container div:nth-child(1) h1 {
+    font-size: 5vw;
+  }
+  body .container div:nth-child(1) p {
+    margin-top: 3vw;
+    font-size: 2.083vw;
+  }
+  body .container div:nth-child(2) {
+    padding: 7.5vw 0;
+  }
+  body .container div:nth-child(2) .try-it-free-7-days {
+    padding: 2.5vw 10vw;
+    border-radius: 1.302vw;
+    font-size: 1.9vw;
+    box-shadow: 0 1.042vw 0 0 rgba(0, 0, 0, 0.2);
+  }
+  body .container div:nth-child(2) form {
+    padding: 3vw;
+    margin-top: 4vw;
+    gap: 2.6vw;
+    border-radius: 1.302vw;
+    box-shadow: 0 0.782vw 0 0 rgba(0, 0, 0, 0.2);
+  }
+  body .container div:nth-child(2) form label input {
+    padding: 2vw;
+    border: 0.13vw solid var(--grayish-blue-clr);
+    border-radius: 0.651vw;
+    font-size: 1.7vw;
+  }
+  body .container div:nth-child(2) form label .error-icon {
+    font-size: 4vw;
+  }
+  body .container div:nth-child(2) form label .fn-i, body .container div:nth-child(2) form label .ln-i, body .container div:nth-child(2) form label .e-i, body .container div:nth-child(2) form label .p-i {
+    right: 27vw;
+  }
+  body .container div:nth-child(2) form label .error-text {
+    margin-top: 1vw;
+    font-size: 1.6vw;
+  }
+  body .container div:nth-child(2) form .adjustment .claim-your-free-trial {
+    padding: 2vw;
+    border-radius: 0.651vw;
+    font-size: 2vw;
+    box-shadow: 0 0.39vw 0 0 rgba(0, 0, 0, 0.5);
+  }
+  body .container div:nth-child(2) form .adjustment .terms-and-services {
+    padding: 0 11vw;
+    margin: 2.8vw 0 0;
+    font-size: 1.4vw;
+  }
+}
+@media (min-width: 768.5px) {
+  .attribution {
+    margin-top: 1vw;
+    font-size: 0.716vw;
+  }
+  body {
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: var(--background-and-terms);
+    padding: 5vw;
+  }
+  body .container div:nth-child(1) {
+    margin: auto 0;
+    width: 50%;
+    padding: 0 6vw;
+  }
+  body .container div:nth-child(1) h1 {
+    font-size: 2.5vw;
+  }
+  body .container div:nth-child(1) p {
+    margin-top: 2vw;
+    font-size: 1.042vw;
+  }
+  body div:nth-child(2) {
+    width: 50%;
+    padding: 0 4.5vw;
+  }
+  body div:nth-child(2) .try-it-free-7-days {
+    padding: 1.4vw;
+    border-radius: 0.651vw;
+    font-size: 0.95vw;
+    box-shadow: 0 0.521vw 0 0 rgba(0, 0, 0, 0.2);
+  }
+  body div:nth-child(2) form {
+    padding: 3vw;
+    margin-top: 2vw;
+    gap: 1.3vw;
+    border-radius: 0.651vw;
+    box-shadow: 0 0.391vw 0 0 rgba(0, 0, 0, 0.2);
+  }
+  body div:nth-child(2) form label input {
+    padding: 1.1vw 2vw;
+    border: 0.065vw solid var(--grayish-blue-clr);
+    border-radius: 0.326vw;
+    font-size: 1vw;
+  }
+  body div:nth-child(2) form label .error-icon {
+    font-size: 2vw;
+  }
+  body div:nth-child(2) form label .fn-i, body div:nth-child(2) form label .ln-i, body div:nth-child(2) form label .e-i, body div:nth-child(2) form label .p-i {
+    right: 11.5vw;
+  }
+  body div:nth-child(2) form label .error-text {
+    margin-top: 0.5vw;
+    font-size: 0.8vw;
+  }
+  body div:nth-child(2) form .adjustment .claim-your-free-trial {
+    padding: 1vw;
+    border-radius: 0.326vw;
+    font-size: 1vw;
+    box-shadow: 0 0.195vw 0 0 rgba(0, 0, 0, 0.5);
+  }
+  body div:nth-child(2) form .adjustment .terms-and-services {
+    margin: 1.4vw 0 0;
+    font-size: 0.7vw;
+  }
+}/*# sourceMappingURL=style.css.map */

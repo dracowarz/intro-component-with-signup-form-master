@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/22063edca9.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>Learn to code by watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p> 
+    </div>
+
+    <div>
+      <button class="try-it-free-7-days"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+
+      <form name="sign-up-form">
+        <label for="first-name">
+          <input type="text" id="first-name" class="first-name" placeholder="First Name">
+          <div id="fn-i" class="error-icon fn-i">
+            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p id="fn-t" class="error-text fn-t"><em>First Name cannot be empty</em></p>
+        </label>
+
+        <label for="last-name">
+          <input type="text" id="last-name" class="last-name" placeholder="Last Name">
+          <div id="ln-i" class="error-icon ln-i">
+            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p id="ln-t" class="error-text ln-t"><em>Last Name cannot be empty</em></p>
+        </label>
+
+        <label for="email-address">
+          <input type="email" id="email-address" class="email-address" placeholder="Email Address" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+          <div id="e-i" class="error-icon e-i">
+            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p id="e-t" class="error-text e-t"><em>Looks like this is not an email</em></p>
+        </label>
+        
+        <label for="password">
+          <input type="password" id="password" class="password" placeholder="Password">
+          <div id="p-i" class="error-icon p-i">
+            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p id="p-t" class="error-text p-t"><em>Password cannot be empty</em></p>
+        </label>
+        
+        <div class="adjustment">
+          <button type="button" class="claim-your-free-trial" onclick="formValidation()">Claim your free trial</button> 
+          <p class="terms-and-services">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/dracowarz">Draco</a>.
+    </p>
+  </footer>
+</body>
+</html>
