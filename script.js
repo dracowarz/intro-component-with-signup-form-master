@@ -57,14 +57,14 @@ function formValidation() {
             if (first_name) {
                 if (last_name) {document.getElementById("e-i").style.top = "83.2vw";} else {document.getElementById("e-i").style.top = "86.7vw";}
             } else {
-                if (last_name) {document.getElementById("e-i").style.top = "86.7vw";} else {document.getElementById("e-i").style.top = "90.1vw";}
+                if (last_name) {document.getElementById("e-i").style.top = "86.7vw";} else {document.getElementById("e-i").style.top = "89.9vw";}
             }
         } else {
             if (!email_validation_result) {
                 if (first_name) {
                     if (last_name) {document.getElementById("e-i").style.top = "83.2vw";} else {document.getElementById("e-i").style.top = "86.7vw";}
                 } else {
-                    if (last_name) {document.getElementById("e-i").style.top = "86.7vw";} else {document.getElementById("e-i").style.top = "90.1vw";}
+                    if (last_name) {document.getElementById("e-i").style.top = "86.7vw";} else {document.getElementById("e-i").style.top = "89.9vw";}
                 }
             }
         }
@@ -80,7 +80,7 @@ function formValidation() {
                 if (last_name) {
                     if (email_validation_result) {document.getElementById("p-i").style.top = "96.1vw";} else {document.getElementById("p-i").style.top = "99.6vw";}
                 } else {
-                    if (email_validation_result) {document.getElementById("p-i").style.top = "99.6vw";} else {document.getElementById("p-i").style.top = "102.8vw";}
+                    if (email_validation_result) {document.getElementById("p-i").style.top = "99.6vw";} else {document.getElementById("p-i").style.top = "102.7vw";}
                 }
             }
         }
@@ -147,7 +147,7 @@ window.addEventListener("resize", function(){
                 } else {
                     if (last_name) {
                         document.getElementById("e-i").style.top = "86.7vw";
-                    } else {document.getElementById("e-i").style.top = "90.1vw";}
+                    } else {document.getElementById("e-i").style.top = "89.9vw";}
                 }
             } else {
                 if (!email_validation_result) {
@@ -158,7 +158,7 @@ window.addEventListener("resize", function(){
                     } else {
                         if (last_name) {
                             document.getElementById("e-i").style.top = "86.7vw";
-                        } else {document.getElementById("e-i").style.top = "90.1vw";}
+                        } else {document.getElementById("e-i").style.top = "89.9vw";}
                     }
                 }
             }
@@ -175,7 +175,7 @@ window.addEventListener("resize", function(){
                 if (last_name) {
                     if (email_validation_result) {document.getElementById("p-i").style.top = "96.1vw";} else {document.getElementById("p-i").style.top = "99.6vw";}
                 } else {
-                    if (email_validation_result) {document.getElementById("p-i").style.top = "99.6vw";} else {document.getElementById("p-i").style.top = "102.8vw";}
+                    if (email_validation_result) {document.getElementById("p-i").style.top = "99.6vw";} else {document.getElementById("p-i").style.top = "102.7vw";}
                 }
             }
         }
